@@ -1,47 +1,51 @@
-/**
- * App => Captial ? why?
- * JSX => JavaScript+ XML
- * XML? -->Extended Markup Language
- * Function which returns XML that function is called component Component of React..
- * @returns
- */
-
 export default function App() {
   return (
     <div>
-      <div
-        className="bg-dark text-light p-2 fw-bold"
-        style={{ height: "50px" }}
-      >
-        Hello Vrushabh
-      </div>
-      <HelloWorld></HelloWorld>
-      <HelloWorld></HelloWorld>
-      <HelloWorld />
-      <HelloWorld />
+      <HelloUniverse></HelloUniverse>
+      <HelloUniverse />
     </div>
   );
 }
 
 /**
- * HTML => Pre Defined Tags like <div> <h1> but HTML tags are in lowercase
- * react => user defined Tag => Component.
- * <<HelloWorld></HelloWorld>  //is userdefined tag
  *
- * @returns
  */
-function HelloWorld() {
+
+function HelloUniverse() {
   return (
     <div>
-      <div className="bg-alert alert-danger p-2">Hello World</div>
-      <p className="bg-alert alert-info p-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-        blanditiis, reiciendis laborum ducimus explicabo provident corrupti
-        consequatur quidem illum, ipsum adipisci asperiores fuga esse laudantium
-        ipsa architecto. Ullam qui, provident est eligendi cumque delectus. Quis
-        facere, laborum, consectetur iste aliquam ad necessitatibus minima
-        obcaecati exercitationem repellat ipsum odit hic reiciendis?
+      <div
+        className="fs-1 bg-link-light p-2 fw-bold font-monospace mt-2"
+        style={{ borderBottom: "red solid 5px", borderTop: "black solid 5px" }}
+      >
+        Hello Universe
+      </div>
+      <p
+        className="bg-dark text-light p-2 "
+        style={{ borderBottom: "red solid 5px" }}
+      >
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum quasi
+        pariatur quae hic reiciendis suscipit? Optio sapiente dignissimos eos
+        voluptatum odit consequatur ab vitae quaerat deleniti officiis dolorem,
+        harum iste nam facere est impedit minima distinctio tenetur accusantium!
+        A illum cupiditate animi dolor. Incidunt distinctio exercitationem
+        repellendus? Necessitatibus dolores nam temporibus voluptatum officia
+        provident quasi nulla unde tempora vitae iure reiciendis obcaecati,
+        magni debitis est commodi quidem praesentium enim molestiae sequi
+        repudiandae totam possimus! Labore aliquam facilis eligendi iure alias
+        itaque cum ipsam soluta sed iusto enim magnam ex doloribus voluptatem
+        sequi aliquid facere numquam consequatur quasi eos, fugiat eaque?
       </p>
+      <input
+        className="btn btn-outline-danger mx-2 w-25"
+        type="button"
+        value="Like"
+      />
+      <input
+        className="btn btn-outline-danger w-25"
+        type="button"
+        value="Dislike"
+      />
     </div>
   );
 }
