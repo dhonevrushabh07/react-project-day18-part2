@@ -1,25 +1,47 @@
-import logo from "./logo.svg";
-import "./App.css";
+/**
+ * App => Captial ? why?
+ * JSX => JavaScript+ XML
+ * XML? -->Extended Markup Language
+ * Function which returns XML that function is called component Component of React..
+ * @returns
+ */
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div
+        className="bg-dark text-light p-2 fw-bold"
+        style={{ height: "50px" }}
+      >
+        Hello Vrushabh
+      </div>
+      <HelloWorld></HelloWorld>
+      <HelloWorld></HelloWorld>
+      <HelloWorld />
+      <HelloWorld />
     </div>
   );
 }
 
-export default App;
+/**
+ * HTML => Pre Defined Tags like <div> <h1> but HTML tags are in lowercase
+ * react => user defined Tag => Component.
+ * <<HelloWorld></HelloWorld>  //is userdefined tag
+ *
+ * @returns
+ */
+function HelloWorld() {
+  return (
+    <div>
+      <div className="bg-alert alert-danger p-2">Hello World</div>
+      <p className="bg-alert alert-info p-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+        blanditiis, reiciendis laborum ducimus explicabo provident corrupti
+        consequatur quidem illum, ipsum adipisci asperiores fuga esse laudantium
+        ipsa architecto. Ullam qui, provident est eligendi cumque delectus. Quis
+        facere, laborum, consectetur iste aliquam ad necessitatibus minima
+        obcaecati exercitationem repellat ipsum odit hic reiciendis?
+      </p>
+    </div>
+  );
+}
