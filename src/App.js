@@ -33,7 +33,7 @@ function Header() {
   return (
     <div className="row">
       <div
-        className=" col bg-dark text-light fs-1 p-2 fw-bolder"
+        className=" col bg-dark text-light fs-1 p-2 fw-bolder sticky-top"
         style={{ height: "60px", fontFamily: "italic" }}
       >
         My Shopping App
@@ -45,22 +45,34 @@ function Header() {
 function MyCard() {
   return (
     <div className="card">
-      <div className="card-header">Moto Xg</div>
-      <div className="card-body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        inventore explicabo consectetur nemo maxime ab quisquam vel iste totam!
-        Enim corrupti illo blanditiis quos itaque eum fugit laborum accusamus
-        nemo quo? Corrupti facilis quasi delectus consequatur architecto, nam
-        qui ipsam, eligendi facere molestiae aperiam sint quaerat dicta vitae
-        excepturi ipsa, in consectetur aliquid. Consequatur, porro similique
-        pariatur incidunt, illum enim cum eveniet numquam tempora, corporis
-        nobis? Aliquid veritatis, iure tempore eum molestias distinctio voluptas
-        accusantium nulla impedit beatae quasi vitae ducimus animi fuga! Beatae
-        fugiat obcaecati doloribus ab facilis velit ut, provident quas incidunt
-        enim porro soluta adipisci voluptatem nam?
+      <div className="card-header bg-dark text-light fs-2 fw-bold border-danger">
+        Moto Xg
+      </div>
+      <div className="card-body p-1">
+        <img
+          className="img-fluid border-info"
+          src="https://picsum.photos/900"
+          style={{ width: "100%" }}
+          alt=""
+        />
+        <div className="bg-alert alert-danger text-dark fw-bold">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda,
+          architecto. Laboriosam odio iste maiores placeat minus autem
+          laudantium, dolorum exercitationem!
+        </div>
+      </div>
+      <div className="card-footer bg-dark">
         <div>
-          <input type="button" value="Add to Cart" />
-          <input type="button" value="Buy Now" />
+          <input
+            className=" btn-outline-dark m-2 rounded-pill p-2"
+            type="button"
+            value="Add to Cart"
+          />
+          <input
+            className=" btn-outline-dark m-2 rounded-pill p-2"
+            type="button"
+            value="Buy Now"
+          />
         </div>
       </div>
     </div>
