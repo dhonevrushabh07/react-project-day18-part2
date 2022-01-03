@@ -1,29 +1,14 @@
 export default function App() {
+  let list = [1, 1, 1, 1, 1, 1, 1];
   return (
     <div className="container-fluid p-0">
       <Header />
       <div className="row">
-        <div className="col-md-4 col-sm-6 mt-2">
-          <MyCard />
-        </div>
-
-        <div className="col-md-4 col-sm-6 mt-2">
-          <MyCard />
-        </div>
-
-        <div className="col-md-4 col-sm-6 mt-2">
-          <MyCard />
-        </div>
-
-        <div className="col-md-4 col-sm-6 mt-2">
-          <MyCard />
-        </div>
-        <div className="col-md-4 col-sm-6 mt-2">
-          <MyCard />
-        </div>
-        <div className="col-md-4 col-sm-6 mt-2">
-          <MyCard />
-        </div>
+        {list.map(() => (
+          <div className="col-md-4 col-sm-6 mt-2">
+            <MyCard />
+          </div>
+        ))}
       </div>
     </div>
   );
