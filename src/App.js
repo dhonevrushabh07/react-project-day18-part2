@@ -1,16 +1,31 @@
 /**
- * class --in Javascript class reserved keyword
- * because of that we have to use "className" stead of "class".  class--->className
- * @returns
+ * style=""
+ * style="background-color:red"
+ *
+ *
+ * Rule
+ * style={{backgroundColor:"red"}}
+ *
+ * 1)First two letters CSS property are now Converted into camelcase property
+ * 2)The value of the property must be in "Double Qoute"
  */
 
 export default function App() {
   return (
     <div>
-      <h1 className="bg-alert alert-danger p-4 text-black">Hello World</h1>
-      <h1 className="bg-alert alert-success p-4 fs-3 text-danger">
-        Hello Universe
-      </h1>
+      <div
+        style={{
+          height: "50px",
+          backgroundColor: "royalblue",
+          fontWeight: "bolder",
+          fontSize: "20px",
+          padding: "5px",
+          textAlign: "center",
+          color: "white",
+        }}
+      >
+        Hello Guys
+      </div>
     </div>
   );
 }
